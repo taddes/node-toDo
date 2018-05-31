@@ -1,8 +1,8 @@
 $(document).ready(() => {
 
 $('form').on('submit', () => {
-  let item = $('form-input');
-  const todo = {item: item.val()};
+  let item = $('form input');
+  let todo = {item: item.val()};
 
     $.ajax({
       type: 'POST',

@@ -7,7 +7,7 @@ const app = express();
 // EJS templating view engine
 app.set('view engine', 'ejs');
 
-// Fire controller
+// Start controller
 todoController(app);
 
 // Static files
