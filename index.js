@@ -1,10 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const todoController = require('./controllers/todoController')
 
 const app = express();
 
 // EJS templating view engine
 app.set('view engine', 'ejs');
+
+// Fire controller
+todoController(app);
 
 // Static files
 app.use(express.static('./public'));
