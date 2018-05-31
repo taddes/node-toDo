@@ -22,7 +22,7 @@ $('form').on('submit', () => {
     let item = $(this).text().replace(/ /g, "-");
     $.ajax({
       type: 'DELETE',
-      url: `/todo/${item}`,
+      url: '/todo/' + item,
       success: (data) => {
           //front-end rendering based on data
           location.reload();
